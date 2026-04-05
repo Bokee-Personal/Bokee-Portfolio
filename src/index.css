@@ -1,0 +1,57 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import "tailwindcss";
+
+@theme {
+  --color-apple-text: #1d1d1f;
+  --color-apple-gray: #86868b;
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    color: var(--color-apple-text);
+    font-size: 17px;
+    line-height: 1.47059;
+    letter-spacing: -0.02em; /* Apple base letter-spacing */
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-apple-text);
+  }
+
+  /* Apple-style Heading Defaults (will be overridden by Tailwind utilities if applied) */
+  h1 {
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+  }
+  h2 {
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+  h3 {
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .snap-y { scroll-snap-type: y mandatory; }
+  .snap-mandatory { scroll-snap-type: y mandatory; }
+  .snap-start { scroll-snap-align: start; }
+  .container-custom {
+    max-width: 1526px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
