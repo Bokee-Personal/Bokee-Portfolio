@@ -19,10 +19,10 @@ export default function Slide5() {
           {/* Sub Title (Role details) */}
           <div className="flex flex-col gap-2.5 border-l-[3px] border-[#3E61DC] pl-5 mt-2">
             <p className="text-[20px] text-[#111] font-bold tracking-tight bg-[#f0f4ff] w-max px-2 py-0.5 rounded">
-              MO(Mobile) ?�론??기획 �??�약 ?�책 ?�계 100% ?�당
+              MO(Mobile) 프론트 기획 및 예약 정책 설계 100% 담당
             </p>
             <p className="text-[18px] text-gray-500 font-medium tracking-tight">
-              (기획 2??체제: ??MO ?�당 / ?�료-Admin ?�당) <span className="mx-2 text-gray-300">|</span> 0?? ?�칭부???�영·?�장까�? 1??2개월�??�로?�트 리딩
+              (기획 2인 체제: 나-MO 담당 / 동료-Admin 담당) <span className="mx-2 text-gray-300">|</span> 0→1 런칭부터 운영·확장까지 1년 2개월간 프로젝트 리딩
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function Slide5() {
             {/* Title */}
             <div className="flex items-center gap-3.5 mb-8">
               <span className="w-9 h-9 rounded-xl bg-[#f0f4ff] text-[#3E61DC] flex items-center justify-center font-black text-[18px]">1</span>
-              <h3 className="text-[24px] font-extrabold text-[#111] tracking-tight">?�프?�인 ?�책 고려 - 모듈???�략 ?�립</h3>
+              <h3 className="text-[24px] font-extrabold text-[#111] tracking-tight">정책 모듈화 전략 수립</h3>
             </div>
 
             {/* Diagram: Situation -> Decision */}
@@ -46,7 +46,7 @@ export default function Slide5() {
               <div className="flex items-start gap-4 mb-2">
                 <span className="shrink-0 bg-gray-500 text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px]">?�황</span>
                 <p className="text-[17px] text-gray-700 font-medium leading-[1.6]">
-                  AS-IS DB 구조 분석 <br />- 21�??�설???�약 ?�책??각각 별도 ?�이블에 <strong className="text-[#111] font-bold">?�드코딩</strong>?�어 ?�음??발견
+                  AS-IS DB 구조 분석 결과, 21개 시설의 예약 정책이<br />각각 별도 테이블에 <strong className="text-[#111] font-bold">하드코딩</strong>되어 있음을 발견
                 </p>
               </div>
 
@@ -64,9 +64,9 @@ export default function Slide5() {
               <div className="flex items-start gap-4">
                 <span className="shrink-0 bg-[#3E61DC] text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px] shadow-sm shadow-blue-200">?�단</span>
                 <div>
-                  <p className="text-[15px] text-gray-500 font-medium mb-2">"모든 ?�외�?개별 ?�?�하�??�규 ?��? ?�입 ??개발 공수 기하급수??증�?"</p>
+                  <p className="text-[15px] text-gray-500 font-medium mb-2">"모든 예외를 개별 대응하면 신규 단지 도입 시 개발 공수가 기하급수적으로 증가한다"</p>
                   <p className="text-[18px] text-[#111] font-extrabold leading-snug">
-                    ?�책???�턴?�하??<span className="bg-[#f0f4ff] px-1 text-[#3E61DC] rounded">8�??�형?�로 모듈??</span>
+                    정책을 패턴화하여 <span className="bg-[#f0f4ff] px-1 text-[#3E61DC] rounded">8개 유형으로 모듈화</span>
                   </p>
                 </div>
               </div>
@@ -74,13 +74,13 @@ export default function Slide5() {
 
             {/* Process Details */}
             <div className="flex-1 mb-8">
-              <h4 className="text-[15px] font-bold text-gray-400 mb-5 uppercase tracking-widest pl-1">?�사결정 과정</h4>
+              <h4 className="text-[15px] font-bold text-gray-400 mb-5 uppercase tracking-widest pl-1">의사결정 과정</h4>
               <ul className="space-y-4">
                 {[
-                  "21�??�설??AS-IS ?�책 ?�수조사 (Excel, 50?�간 ?�요)",
-                  "?�책 변??추출 (?�약 ?�위, ?�수 ?�한, ?�박 가???��?, 취소 ?�책 ??",
-                  "?�책 변?�의 조합 ?�턴??8�??�형?�로 그룹??",
-                  "Admin?�서 ?�정 가?�한 ?�책 구조�?TO-BE ?�계"
+                  "21개 시설의 AS-IS 정책 전수조사 (Excel, 50시간 소요)",
+                  "정책 변수 추출 (예약 단위, 횟수 제한, 연박 가능 여부, 취소 정책 등)",
+                  "정책 변수의 조합 패턴을 8개 유형으로 그룹화",
+                  "Admin에서 설정 가능한 정책 구조로 TO-BE 설계"
                 ].map((text, i) => (
                   <li key={i} className="flex gap-3.5 text-[17px] text-gray-600 font-medium leading-relaxed">
                     <span className="font-bold text-[#3E61DC] mt-[2px]">{i + 1}.</span>
@@ -97,7 +97,7 @@ export default function Slide5() {
                 <span className="text-[18px] font-extrabold text-[#3E61DC] tracking-widest uppercase">Result</span>
               </div>
               <p className="text-[19px] text-[#111] font-bold leading-[1.5]">
-                ?�규 ?��? ?�입 ??개발 공수 ?�이 Admin ?�정만으�?<br />21�??�설 ?�책??<strong className="text-indigo-700 underline decoration-2 underline-offset-4">2?????�팅 가?�한 구조 ?�보</strong>
+                신규 단지 도입 시 개발 공수 없이 Admin 설정만으로<br />21개 시설 정책을 <strong className="text-indigo-700 underline decoration-2 underline-offset-4">2일 내 세팅 가능한 구조 확보</strong>
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Slide5() {
             {/* Title */}
             <div className="flex items-center gap-3.5 mb-8">
               <span className="w-9 h-9 rounded-xl bg-[#f0f4ff] text-[#3E61DC] flex items-center justify-center font-black text-[18px]">2</span>
-              <h3 className="text-[24px] font-extrabold text-[#111] tracking-tight">?�약 ?�정 ?�합 ?�략 ?�립</h3>
+              <h3 className="text-[24px] font-extrabold text-[#111] tracking-tight">예약 여정 통합 전략 수립</h3>
             </div>
 
             {/* Diagram: Situation -> Decision */}
@@ -116,7 +116,7 @@ export default function Slide5() {
               <div className="flex items-start gap-4 mb-2">
                 <span className="shrink-0 bg-gray-500 text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px]">?�황</span>
                 <p className="text-[17px] text-gray-700 font-medium leading-[1.6]">
-                  ?�용???�동 로그 분석 <br />- <strong className="text-[#111] font-bold">"?�용�?구매 ?�료 ??30% ?�용?��? ?�약 ?�면?�로 ?�동?��? ?�음"</strong> 발견
+                  사용자 행동 로그 분석 결과,<br /><strong className="text-[#111] font-bold">"이용권 구매 완료 → 30% 사용자가 예약 화면으로 이동하지 않음"</strong> 발견
                 </p>
               </div>
 
@@ -134,9 +134,9 @@ export default function Slide5() {
               <div className="flex items-start gap-4">
                 <span className="shrink-0 bg-[#3E61DC] text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px] shadow-sm shadow-blue-200">?�단</span>
                 <div>
-                  <p className="text-[15px] text-gray-500 font-medium mb-2">"?�용�?구매?� ?�약??분리??8?�계 Flow가 ?�용???�탈??근본 ?�인"</p>
+                  <p className="text-[15px] text-gray-500 font-medium mb-2">"이용권 구매와 예약이 분리된 8단계 Flow가 사용자 이탈의 근본 원인"</p>
                   <p className="text-[18px] text-[#111] font-extrabold leading-snug">
-                    ?�용�??�택�??�약??<span className="bg-[#f0f4ff] px-1 text-[#3E61DC] rounded">?�일 Flow�??�합 (4?�계 축소)</span>
+                    이용권 선택과 예약을 <span className="bg-[#f0f4ff] px-1 text-[#3E61DC] rounded">하나의 Flow로 통합 (4단계 축소)</span>
                   </p>
                 </div>
               </div>
@@ -144,13 +144,13 @@ export default function Slide5() {
 
             {/* Process Details */}
             <div className="flex-1 mb-8">
-              <h4 className="text-[15px] font-bold text-gray-400 mb-5 uppercase tracking-widest pl-1">?�사결정 과정</h4>
+              <h4 className="text-[15px] font-bold text-gray-400 mb-5 uppercase tracking-widest pl-1">의사결정 과정</h4>
               <ul className="space-y-4">
                 {[
-                  "?�용???�동 로그 분석 (?�집 : 2�?",
-                  "VOC 60�??�분�???\"?�약 ???�다\" 문의가 ?�체??40%",
-                  "벤치마킹 ?�?�성 ?�색: ?��??? ?�이�??�약 ???�???�약 Flow 분석",
-                  <React.Fragment key="4">TO-BE Flow ?�계: <strong className="text-[#111] font-bold">?�용�??�택 ??좌석/?�간 ?�택 ??결제 ???�약 ?�료 (4?�계)</strong></React.Fragment>
+                  "사용자 행동 로그 분석 (GA, 2주 데이터)",
+                  "VOC 60건 재분류 → \"예약 안 됐다\" 문의가 전체의 40%",
+                  "벤치마킹: 야놀자, 네이버 예약 등 타사 예약 Flow 분석",
+                  <React.Fragment key="4">TO-BE Flow 설계: <strong className="text-[#111] font-bold">이용권 선택 → 좌석/시간 선택 → 결제 → 예약 완료 (4단계)</strong></React.Fragment>
                 ].map((text, i) => (
                   <li key={i} className="flex gap-3.5 text-[17px] text-gray-600 font-medium leading-relaxed">
                     <span className="font-bold text-[#3E61DC] mt-[2px]">{i + 1}.</span>
@@ -167,8 +167,8 @@ export default function Slide5() {
                 <span className="text-[18px] font-extrabold text-[#3E61DC] tracking-widest uppercase">Result</span>
               </div>
               <p className="text-[19px] text-[#111] font-bold leading-[1.5]">
-                ?�용???�탈�?감소 �??�약 ?�료??<strong className="text-indigo-700 underline decoration-2 underline-offset-4">68% ??89% 증�?</strong>
-                <br /><span className="text-[15px] text-gray-500 font-medium mt-1">(?�칭 ??3개월 ?�이??기�?)</span>
+                예약 완료율 <strong className="text-indigo-700 underline decoration-2 underline-offset-4">68% → 89% 증가</strong>
+                <br /><span className="text-[15px] text-gray-500 font-medium mt-1">(런칭 후 3개월 데이터 기준)</span>
               </p>
             </div>
           </div>

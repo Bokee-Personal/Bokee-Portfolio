@@ -4,43 +4,43 @@ export default function Slide4() {
   const painPoints = [
     {
       id: "1",
-      title: "모바???�약?��? 고려?��? ?��? ?�영 ?�책",
-      result: "?�연???�영 �??�??불�?",
+      title: "모바일 미고려 현장 정책 → 유연한 대응 불가",
+      result: "정책 변경 시 개발팀 투입 필수",
       details: [
         <React.Fragment key="1">
-          "?�스????5?? 게스?�하?�스 ??1??처럼<br /> ?�설마다 ?�른 ?�용 ?�한??<strong className="text-[#111] font-bold">?�기�?관�?</strong>
+          "헬스장은 월 5회, 게스트하우스는 월 1회"처럼<br /> 시설마다 다른 이용 제한을 <strong className="text-[#111] font-bold">수기로 관리</strong>
         </React.Fragment>,
         <React.Fragment key="2">
-          모바?�에?�는 ?��? <strong className="text-[#111] font-bold">?�드코딩</strong>?�로 구현<br /> ???�책 변�???<strong className="text-[#111] font-bold">개발?� ?�입 ?�수</strong>
+          모바일에서는 이를 <strong className="text-[#111] font-bold">하드코딩</strong>으로 구현<br /> → 정책 변경 시 <strong className="text-[#111] font-bold">개발팀 투입 필수</strong>
         </React.Fragment>
       ]
     },
     {
       id: "2",
-      title: "?�약 채널/?�설�??�황 관�?불�?",
-      result: "?�규 ?��? 비즈?�스 ?�장 병목",
+      title: "예약 채널/현황 관리 불가 → 비즈니스 확장 병목",
+      result: "신규 단지 비즈니스 확장 병목",
       details: [
         <React.Fragment key="1">
-          Admin, ?�오?�크, 모바??APP 3�?채널 ?�시 ?�약
+          Admin, 키오스크, 모바일 APP 3개 채널 동시 예약
         </React.Fragment>,
         <React.Fragment key="2">
-          ??채널?�서 ?�약?�면 ?�른 채널???�시�?반영 ??????<strong className="text-[#111] font-bold">중복 ?�약 발생</strong>
+          한 채널에서 예약하면 다른 채널에 실시간 반영 안 됨 → <strong className="text-[#111] font-bold">중복 예약 발생</strong>
         </React.Fragment>,
         <React.Fragment key="3">
-          ?�규 ?��? ?�입 ??21�??�설 ?�책???�일??개발 <br />??<strong className="text-[#111] font-bold">?�입 기간 6개월 ?�요</strong>
+          신규 단지 도입 시 21개 시설 정책을 일일이 개발 <br />→ <strong className="text-[#111] font-bold">도입 기간 6개월 소요</strong>
         </React.Fragment>
       ]
     },
     {
       id: "3",
-      title: "?�용�?구매/?�약 ?�원??",
-      result: "?�약 채널 ?�탈 �?CS ??��",
+      title: "이용권 구매/예약 프로세스 이원화",
+      result: "예약 채널 이탈 및 CS 폭증",
       details: [
         <React.Fragment key="1">
-          ?�용?�는 "?�용�?구매 ???�설 ?�약" <strong className="text-[#111] font-bold">�?8?�계 진행</strong>
+          사용자는 "이용권 구매 → 시설 예약" <strong className="text-[#111] font-bold">총 8단계 진행</strong>
         </React.Fragment>,
         <React.Fragment key="2">
-          ?�용�?구매, ?�설 ?�약 ?�로?�스 ?�원?????�용?��? "결제?�는???�약?????�다"�??�해?�며 <strong className="text-[#111] font-bold">VOC 발생</strong>
+          이용권 구매, 시설 예약 프로세스 이원화 → 사용자가 "결제했는데 예약이 안 됐다"고 오해하며 <strong className="text-[#111] font-bold">VOC 발생</strong>
         </React.Fragment>
       ]
     }
@@ -62,13 +62,13 @@ export default function Slide4() {
 
           {/* Main Title */}
           <h1 className="text-[40px] md:text-[46px] font-extrabold text-[#111] tracking-tight leading-tight mb-5">
-            ?�장별로 ?�이???�프?�인 ?�책??모바?�에 그�?�??�식?�어 <span className="text-[#3E61DC]">?�스???�장??병목 발생</span>
+            현장별로 다른 오프라인 정책이 모바일에 그대로 이식되어 <span className="text-[#3E61DC]">시스템 확장에 병목 발생</span>
           </h1>
 
           {/* Sub Title */}
           <p className="text-[25px] text-gray-500 font-medium leading-[1.6] max-w-[1100px] tracking-tight">
-            ?�닉?� ?�성물산???�영?�는 ?�파???�주�??�???�이?�스?�???�합 ?�랫?�입?�다.<br />
-            그중 커�??�티 ?�설 ?�약 ?�비?�는 <strong className="text-[#111] font-bold border-b-2 border-red-200">?�체 VOC??60% ?�상??차�??�는 최�? 불편 ?�항</strong>?�었?�니??
+            홈닉은 삼성물산이 운영하는 아파트 입주민 대상 라이프스타일 통합 플랫폼입니다.<br />
+            그중 커뮤니티 시설 예약 서비스는 <strong className="text-[#111] font-bold border-b-2 border-red-200">전체 VOC의 60% 이상을 차지하는 최대 불편 사항</strong>이었습니다.
           </p>
         </div>
       </div>
