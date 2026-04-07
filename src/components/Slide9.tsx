@@ -1,194 +1,169 @@
 import React from 'react';
 
-const lessons = [
-  {
-    num: '1',
-    icon: '🎯',
-    color: '#3E61DC',
-    bg: '#EEF2FF',
-    border: '#C7D2FE',
-    tagColor: '#3E61DC',
-    title: '전략적 우선순위 결정의 중요성',
-    quote: '"모든 예외를 다루기보다 시스템에 맞는 정책을 선제적으로 개선"',
-    points: [
-      {
-        label: '문제 인식',
-        text: '21개 시설의 모든 예외 케이스를 다 구현하려 했으나, 개발 공수만 증가시키고 유지보수를 불가능하게 만든다는 것을 깨달음',
-      },
-      {
-        label: '전환점',
-        text: '"현장 관리자가 시스템에 맞춰 정책을 조정"하는 방향으로 전략 전환',
-      },
-      {
-        label: '결과',
-        text: '속도와 품질을 동시에 확보 → 도입 리드타임 6개월 → 2주',
-      },
-    ],
-  },
-  {
-    num: '2',
-    icon: '📊',
-    color: '#7C3AED',
-    bg: '#F5F3FF',
-    border: '#DDD6FE',
-    tagColor: '#7C3AED',
-    title: '사용자 행동 데이터 기반 의사결정',
-    quote: '"가설이 아닌 데이터가 UX 개선의 출발점"',
-    points: [
-      {
-        label: '발견',
-        text: '"이용권 구매 후 30% 이탈"이라는 데이터를 발견하지 못했다면, Flow 통합이라는 근본적 해결책을 찾지 못했을 것',
-      },
-      {
-        label: '적용',
-        text: '이후 모든 프로젝트에서 GA, SQL을 활용한 사용자 행동 분석을 우선 실행',
-      },
-      {
-        label: '결과',
-        text: '데이터 기반 의사결정으로 예약 완료율 68% → 89% 달성',
-      },
-    ],
-  },
-  {
-    num: '3',
-    icon: '🤝',
-    color: '#059669',
-    bg: '#ECFDF5',
-    border: '#A7F3D0',
-    tagColor: '#059669',
-    title: 'B2B2C 플랫폼에서의 이해관계자 관리',
-    quote: '"B2C만 고려하면 실패 — B도 동시에 잡아야 한다"',
-    points: [
-      {
-        label: '핵심 학습',
-        text: 'B2C만 고려하면 실패: 현장 관리자(B)의 운영 편의성도 동시에 확보해야 신규 단지 도입이 가능하다는 것을 학습',
-      },
-      {
-        label: '실행',
-        text: 'Admin 기능에 현장 관리자 의견을 적극 반영하여 "현장에서 쓰기 편한 시스템" 설계에 집중',
-      },
-      {
-        label: '결과',
-        text: '3개월 내 3개 신규 단지 도입 목표 달성률 100%',
-      },
-    ],
-  },
-];
-
-const labelColors: Record<string, { text: string; bg: string }> = {
-  '문제 인식': { text: '#DC2626', bg: '#FEF2F2' },
-  '전환점': { text: '#D97706', bg: '#FFFBEB' },
-  '결과': { text: '#059669', bg: '#ECFDF5' },
-  '발견': { text: '#7C3AED', bg: '#F5F3FF' },
-  '적용': { text: '#3E61DC', bg: '#EEF2FF' },
-  '핵심 학습': { text: '#DC2626', bg: '#FEF2F2' },
-  '실행': { text: '#D97706', bg: '#FFFBEB' },
-};
-
 export default function Slide9() {
+  const metaInfo = [
+    { label: 'Period', value: '2025. 01 ~ 2025. 05 (5개월, POC: 5/19 ~ 5/31)' },
+    { label: 'Position/Contribution', value: '기획 PL/100%' },
+  ];
+
+  const packageCategories = [
+    {
+      title: '성과 지표',
+      items: ['클릭률 37.6%', '전환율 15.2%', '전환율 최고 18.1% (SEG3)'],
+    },
+    {
+      title: '핵심 업무',
+      items: ['SEG 타겟팅 전략 수립', 'UX 원칙 5가지 설계', '바텀시트 UI 설계'],
+    },
+    {
+      title: '활용 기술',
+      items: ['Figma / GA4 / Excel / Jira'],
+    },
+    {
+      title: '비즈니스 성과',
+      items: ['정규화 개발 승인', '연 매출 36억 기여 예상'],
+    },
+  ];
+
+  const newsLinks = [
+    { text: 'Figma 기획서 상세 보기', url: '#' },
+    { text: 'GA4 성과 분석 리포트 확인', url: '#' },
+  ];
+
   return (
-    <section className="w-full h-screen flex flex-col snap-start relative font-sans bg-[#fcfdff]">
+    <section className="w-full h-screen flex flex-col snap-start relative font-sans bg-[#FDFCFB] overflow-hidden">
 
-      {/* Top Header */}
-      <div className="h-[22%] w-full flex flex-col justify-center px-12 md:px-20 relative overflow-hidden">
-        <div className="absolute -left-20 top-0 w-[500px] h-[400px] bg-[#A5B4FC] blur-[160px] opacity-15 rounded-full z-0 pointer-events-none" />
+      <div className="max-w-[1526px] mx-auto w-full px-12 md:px-20 flex-1 flex flex-col justify-center pt-2 pb-10">
 
-        <div className="max-w-[1526px] mx-auto w-full z-10">
-          {/* Badge */}
-          <div className="inline-flex items-center bg-[#f0f4ff] border border-[#00215F]/10 px-4 py-1.5 rounded-full mb-4">
-            <span className="text-[18px] font-bold text-[#00215F] tracking-wider uppercase">Lesson Learned</span>
-          </div>
+        <div className="flex flex-row gap-16 items-start justify-between">
 
-          <div className="flex items-end justify-between">
-            <div>
-              <h1 className="text-[36px] md:text-[42px] font-extrabold text-[#111] tracking-tight leading-tight mb-2">
-                이 프로젝트가 남긴{' '}
-                <span className="text-[#3E61DC]">3가지 핵심 인사이트</span>
-              </h1>
-              <p className="text-[16px] text-gray-500 font-medium">
-                0→1 런칭부터 확장까지 1년 2개월간의 프로젝트를 통해 체득한 PM으로서의 성장
+          {/* Left Column */}
+          <div className="flex-1 max-w-[1500px]">
+            {/* Title */}
+            <h1 className="text-[42px] md:text-[48px] font-extrabold text-[#111] tracking-tighter leading-tight mb-8 whitespace-nowrap">
+              Chapter2. <span className="text-[#E91E8A]">요금제 업셀/다운케어 서비스 개선</span>
+            </h1>
+
+            {/* Meta Info */}
+            <div className="space-y-1 mb-6">
+              {metaInfo.map((info, idx) => (
+                <div key={idx} className="flex gap-2 text-[14px]">
+                  <span className="font-bold text-[#111] w-[150px]">{info.label}.</span>
+                  <span className="text-gray-500 font-medium">{info.value}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Business Impact Highlight */}
+            <div className="bg-[#FEF9C3] px-5 py-2.5 rounded-lg mb-8 inline-block w-full max-w-[700px]">
+              <p className="text-[14px] font-bold text-[#111]">
+                Business Impact. <span className="font-medium ml-1">실시간 데이터 기반 개인화 맞춤 요금제 추천을 통한 정규화 승인 및 매출 기여</span>
               </p>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="flex-1 w-full bg-white flex flex-col justify-center px-12 md:px-20 pt-4 pb-10 border-t border-gray-100 shadow-[0_-10px_40px_rgba(0,0,0,0.02)] relative z-10">
-        <div className="max-w-[1526px] mx-auto w-full grid grid-cols-3 gap-6 h-full">
-
-          {lessons.map((lesson) => (
-            <div
-              key={lesson.num}
-              className="flex flex-col rounded-3xl border overflow-hidden shadow-sm"
-              style={{ borderColor: lesson.border, backgroundColor: lesson.bg }}
-            >
-              {/* Card Top */}
-              <div className="px-6 pt-6 pb-4">
-                <div className="flex items-center justify-between mb-4">
-                  <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-[18px] text-white shadow-sm"
-                    style={{ backgroundColor: lesson.color }}
-                  >
-                    {lesson.num}
-                  </div>
-                  <span className="text-[30px]">{lesson.icon}</span>
-                </div>
-
-                <h3 className="text-[17px] font-extrabold text-[#111] leading-snug mb-3 tracking-tight">
-                  {lesson.title}
-                </h3>
-
-                {/* Quote */}
-                <div
-                  className="rounded-xl px-4 py-3 border"
-                  style={{ backgroundColor: 'white', borderColor: lesson.border }}
-                >
-                  <p
-                    className="text-[13px] font-bold leading-relaxed italic"
-                    style={{ color: lesson.color }}
-                  >
-                    {lesson.quote}
-                  </p>
-                </div>
-              </div>
-
-              {/* Divider */}
-              <div className="mx-6 h-px" style={{ backgroundColor: lesson.border }} />
-
-              {/* Points */}
-              <div className="px-6 py-4 flex flex-col gap-3 flex-1">
-                {lesson.points.map((point, j) => {
-                  const lc = labelColors[point.label] ?? { text: lesson.color, bg: 'white' };
-                  return (
-                    <div key={j} className="flex items-start gap-3">
-                      <span
-                        className="shrink-0 text-[11px] font-extrabold px-2.5 py-1 rounded-full mt-0.5 whitespace-nowrap"
-                        style={{ color: lc.text, backgroundColor: lc.bg, border: `1px solid ${lc.text}20` }}
-                      >
-                        {point.label}
-                      </span>
-                      <p className="text-[13px] text-gray-600 font-medium leading-relaxed">
-                        {point.text}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              {/* Bottom accent */}
-              <div className="h-1.5 w-full" style={{ backgroundColor: lesson.color, opacity: 0.35 }} />
+            {/* Body Description */}
+            <div className="space-y-6 text-[16px] leading-[1.8] text-gray-700 font-medium mb-10 max-w-[750px]">
+              <p>
+                데이터 사용량을 고려하지 않고 요금제를 하향 선택하는 고객에게 실시간 데이터 사용 패턴을 분석하여 최적의 요금제를 제안하는 개인화 캠페인을 설계했습니다.
+              </p>
+              <p>
+                총 963명 대상 13일간 POC 실험을 통해 <span className="text-[#111] font-bold">클릭률 37.6%, 전환율 15.2%</span> 등 압도적인 성과를 기록하며, 데이터 기반 개인화 UX의 효용성을 검증하고 전사 확산을 위한 정규화 개발 승인을 획득했습니다.
+              </p>
             </div>
-          ))}
+
+            {/* Features/Packages Grid */}
+            <h3 className="text-[18px] font-black text-[#111] mb-5">프로젝트 성과 및 업무 범위</h3>
+            <div className="grid grid-cols-4 gap-4 mb-10">
+              {packageCategories.map((cat, i) => (
+                <div key={i} className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <h4 className="text-[13px] font-bold text-gray-400 mb-3 uppercase tracking-wider">{cat.title}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {cat.items.map((item, j) => (
+                      <span key={j} className="bg-gray-50 text-[#111] text-[12px] font-bold px-2 py-1 rounded border border-gray-100">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* News/Links Section */}
+            <div className="bg-[#F8F9FA] rounded-xl p-5 border border-gray-100 max-w-[700px]">
+              <h4 className="text-[14px] font-bold text-[#111] mb-3 uppercase tracking-wider">관련 자료</h4>
+              <ul className="space-y-2">
+                {newsLinks.map((link, idx) => (
+                  <li key={idx} className="flex items-center gap-2 text-[14px] font-medium text-gray-600">
+                    <span className="w-1.5 h-1.5 rounded-full bg-gray-400" />
+                    <a href={link.url} className="hover:text-[#E91E8A] transition-colors decoration-gray-300 underline underline-offset-4">
+                      {link.text} <span className="text-[12px] font-bold text-[#3E61DC] ml-1">바로가기</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Right Column: Performance Cards */}
+          <div className="flex-1 flex flex-col items-center justify-center gap-4 hidden xl:flex relative h-full min-h-[600px] xl:-mt-10">
+            {/* Background Glows for Glassmorphism */}
+            <div className="absolute top-[10%] left-[20%] w-[300px] h-[300px] bg-[#E91E8A]/10 rounded-full blur-[80px] -z-10 pointer-events-none" />
+            <div className="absolute bottom-[20%] right-[10%] w-[250px] h-[250px] bg-[#3B82F6]/10 rounded-full blur-[80px] -z-10 pointer-events-none" />
+
+            {/* Title */}
+            <div className="bg-white/50 backdrop-blur-md px-6 py-2 rounded-full shadow-sm mb-2">
+              <h3 className="text-[14px] font-black text-[#111] uppercase tracking-[0.15em]">POC 핵심 성과</h3>
+            </div>
+
+            {/* Cards Container */}
+            <div className="flex flex-col gap-4 w-[280px]">
+
+              {/* Card 1 */}
+              <div className="flex flex-col items-center justify-center h-[125px] rounded-3xl bg-white/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.05)] relative overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/15 to-transparent" />
+                <p className="text-[42px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[#8B5CF6] to-[#7C3AED] leading-none mb-1.5 relative z-10 tracking-tight">37.6%</p>
+                <p className="text-[15px] font-bold text-gray-600 relative z-10">추천 클릭률</p>
+              </div>
+
+              {/* Card 2 */}
+              <div className="flex flex-col items-center justify-center h-[125px] rounded-3xl bg-white/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.05)] relative overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#EC4899]/15 to-transparent" />
+                <p className="text-[42px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[#EC4899] to-[#E91E8A] leading-none mb-1.5 relative z-10 tracking-tight">15.2%</p>
+                <p className="text-[15px] font-bold text-gray-600 relative z-10">추천 전환율</p>
+              </div>
+
+              {/* Card 3 */}
+              <div className="flex flex-col items-center justify-center h-[125px] rounded-3xl bg-white/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.05)] relative overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/15 to-transparent" />
+                <p className="text-[42px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[#3B82F6] to-[#2563EB] leading-none mb-1.5 relative z-10 tracking-tight">963명</p>
+                <p className="text-[15px] font-bold text-gray-600 relative z-10">POC 대상</p>
+              </div>
+
+              {/* Card 4 */}
+              <div className="flex flex-col items-center justify-center h-[125px] rounded-3xl bg-white/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.05)] relative overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#10B981]/15 to-transparent" />
+                <p className="text-[42px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#059669] leading-none mb-1.5 relative z-10 tracking-tight">13일간</p>
+                <p className="text-[15px] font-bold text-gray-600 relative z-10">실험 기간</p>
+              </div>
+
+            </div>
+
+            {/* Bottom Highlight Status */}
+            <div className="mt-4 flex flex-col items-center justify-center bg-white/60 backdrop-blur-xl px-10 py-5 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.05)]">
+              <p className="text-[18px] font-black text-[#111] mb-1.5 flex items-center gap-2 tracking-tight">
+                <span className="text-[20px]">💡</span> 정규화 승인
+              </p>
+              <p className="text-[14px] font-bold text-[#E91E8A]">→ 그로스해킹플랫폼 전환</p>
+            </div>
+          </div>
 
         </div>
       </div>
 
       {/* Page Number */}
-      <div className="absolute bottom-8 right-12 text-gray-400 font-bold text-[14px] z-20">
-        09 / 16
+      <div className="absolute bottom-10 right-10 text-gray-400 font-medium text-[15px] z-20">
+        09 / 15
       </div>
-
     </section>
   );
 }

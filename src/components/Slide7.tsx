@@ -25,35 +25,35 @@ const modules = [
     desc: '정기권 / 일일권 / 무료권 통합 표시',
     tag: 'Step 1',
     color: '#3E61DC',
-    bg: '#EEF2FF',
-    border: '#C7D2FE',
+    bg: '#F8FAFC',
+    border: '#E2E8F0',
   },
   {
     icon: '📍',
     title: '좌석/타석/룸 선택 모듈',
     desc: '시설 유형별 동적 렌더링',
     tag: 'Step 2',
-    color: '#7C3AED',
-    bg: '#F5F3FF',
-    border: '#DDD6FE',
+    color: '#3E61DC',
+    bg: '#F8FAFC',
+    border: '#E2E8F0',
   },
   {
     icon: '✅',
     title: '예약 확인 모듈',
     desc: '정책 변수 기반 예약 가능 여부 실시간 검증',
     tag: 'Step 3',
-    color: '#059669',
-    bg: '#ECFDF5',
-    border: '#A7F3D0',
+    color: '#3E61DC',
+    bg: '#F8FAFC',
+    border: '#E2E8F0',
   },
   {
     icon: '🔔',
     title: '예약 완료 모듈',
     desc: '취소 정책 안내 + 알림 설정',
     tag: 'Step 4',
-    color: '#D97706',
-    bg: '#FFFBEB',
-    border: '#FDE68A',
+    color: '#3E61DC',
+    bg: '#F8FAFC',
+    border: '#E2E8F0',
   },
 ];
 
@@ -74,13 +74,9 @@ export default function Slide7() {
         <div className="absolute left-0 top-0 w-[600px] h-[400px] bg-[#A5B4FC] blur-[160px] opacity-15 rounded-full z-0 pointer-events-none" />
 
         <div className="max-w-[1526px] mx-auto w-full z-10">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-[13px] font-bold text-gray-400 tracking-widest uppercase">Background</span>
-            <span className="text-gray-300 text-[13px]">→</span>
-            <span className="text-[13px] font-bold text-[#3E61DC] tracking-widest uppercase">Solution</span>
-            <span className="text-gray-300 text-[13px]">→</span>
-            <span className="text-[13px] font-bold text-gray-400 tracking-widest uppercase">Results</span>
+          {/* Badge */}
+          <div className="inline-flex items-center bg-[#f0f4ff] border border-[#00215F]/10 px-4 py-1.5 rounded-full mb-5">
+            <span className="text-[20px] font-bold text-[#00215F] tracking-wider uppercase">Solution</span>
           </div>
 
           <h1 className="text-[36px] md:text-[40px] font-extrabold text-[#111] tracking-tight leading-tight mb-2.5">

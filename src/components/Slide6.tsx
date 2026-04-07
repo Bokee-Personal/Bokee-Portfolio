@@ -1,14 +1,14 @@
 import React from 'react';
 
 const facilityTypes = [
-  { num: '1', label: '정기권 시설', examples: '헬스장, 사우나, 수영장', color: '#3E61DC', bg: '#EEF2FF' },
-  { num: '2', label: '타석제 시설', examples: '골프연습장', color: '#7C3AED', bg: '#F5F3FF' },
-  { num: '3', label: '좌석제 시설', examples: '독서실, 락커', color: '#0891B2', bg: '#ECFEFF' },
-  { num: '4', label: '룸제 시설', examples: '스크린골프', color: '#059669', bg: '#ECFDF5' },
-  { num: '5', label: '숙박 시설', examples: '게스트하우스', color: '#D97706', bg: '#FFFBEB' },
-  { num: '6', label: '대관 시설', examples: '연회장, 파티룸', color: '#DC2626', bg: '#FEF2F2' },
-  { num: '7', label: '주문형 시설', examples: '카페테리아', color: '#DB2777', bg: '#FDF2F8' },
-  { num: '8', label: '일반 상품', examples: '세탁, 세차', color: '#64748B', bg: '#F8FAFC' },
+  { num: '1', label: '정기권 시설', examples: '헬스장, 사우나, 수영장', color: '#3E61DC', bg: '#F8FAFC' },
+  { num: '2', label: '타석제 시설', examples: '골프연습장', color: '#3E61DC', bg: '#F8FAFC' },
+  { num: '3', label: '좌석제 시설', examples: '독서실, 락커', color: '#3E61DC', bg: '#F8FAFC' },
+  { num: '4', label: '룸제 시설', examples: '스크린골프', color: '#3E61DC', bg: '#F8FAFC' },
+  { num: '5', label: '숙박 시설', examples: '게스트하우스', color: '#3E61DC', bg: '#F8FAFC' },
+  { num: '6', label: '대관 시설', examples: '연회장, 파티룸', color: '#3E61DC', bg: '#F8FAFC' },
+  { num: '7', label: '주문형 시설', examples: '카페테리아', color: '#3E61DC', bg: '#F8FAFC' },
+  { num: '8', label: '일반 상품', examples: '세탁, 세차', color: '#3E61DC', bg: '#F8FAFC' },
 ];
 
 const policyVars = [
@@ -28,13 +28,9 @@ export default function Slide6() {
         <div className="absolute -right-20 top-0 w-[500px] h-[500px] bg-[#A5B4FC] blur-[150px] opacity-20 rounded-full z-0 pointer-events-none" />
 
         <div className="max-w-[1526px] mx-auto w-full z-10">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-[13px] font-bold text-gray-400 tracking-widest uppercase">Background</span>
-            <span className="text-gray-300 text-[13px]">→</span>
-            <span className="text-[13px] font-bold text-[#3E61DC] tracking-widest uppercase">Solution</span>
-            <span className="text-gray-300 text-[13px]">→</span>
-            <span className="text-[13px] font-bold text-gray-400 tracking-widest uppercase">Results</span>
+          {/* Badge */}
+          <div className="inline-flex items-center bg-[#f0f4ff] border border-[#00215F]/10 px-4 py-1.5 rounded-full mb-5">
+            <span className="text-[20px] font-bold text-[#00215F] tracking-wider uppercase">Solution</span>
           </div>
 
           <h1 className="text-[36px] md:text-[42px] font-extrabold text-[#111] tracking-tight leading-tight mb-3">

@@ -85,7 +85,7 @@ export default function Slide4() {
                 <div className="w-10 h-10 rounded-xl bg-[#f0f4ff] flex items-center justify-center border border-blue-50 shadow-sm shrink-0">
                   <span className="text-[18px] font-black text-[#3E61DC]">{point.id}</span>
                 </div>
-                <h3 className="text-[24px] font-extrabold text-[#111] tracking-tight leading-tight whitespace-pre-line">
+                <h3 className="text-[22px] font-extrabold text-[#111] tracking-tight leading-tight whitespace-pre-line">
                   {point.title}
                 </h3>
               </div>
@@ -93,7 +93,7 @@ export default function Slide4() {
               {/* Body Details */}
               <ul className="space-y-6 flex-1 mb-8">
                 {point.details.map((detail, i) => (
-                  <li key={i} className="flex items-start gap-4 text-[22px] text-gray-600 leading-[1.65] font-medium tracking-tight">
+                  <li key={i} className="flex items-start gap-4 text-[20px] text-gray-600 leading-[1.65] font-medium tracking-tight">
                     <span className="mt-3 w-2 h-2 bg-[#3E61DC] flex-shrink-0 rounded-full opacity-60"></span>
                     <span>{detail}</span>
                   </li>
@@ -103,10 +103,10 @@ export default function Slide4() {
               {/* Pink Pain Point Box (Bottom Pinned) */}
               <div className="mt-auto bg-[#FFF0F4] rounded-2xl p-7 border border-[#FFE4EB] shadow-sm">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-[16px] font-extrabold text-[#FF2E63] tracking-widest uppercase">?�� Pain Point</span>
+                  <span className="text-[16px] font-extrabold text-[#FF2E63] tracking-widest uppercase">🚨 Pain Point</span>
                 </div>
                 <p className="text-[24px] font-bold text-[#D9042B] leading-snug">
-                  ??{point.result}
+                  → {point.result}
                 </p>
               </div>
 
