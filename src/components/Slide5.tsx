@@ -44,7 +44,7 @@ export default function Slide5() {
             <div className="bg-[#fcfdff] rounded-[1.5rem] p-7 border border-[#f0f4ff] shadow-sm relative mb-8">
               {/* Situation */}
               <div className="flex items-start gap-4 mb-2">
-                <span className="shrink-0 bg-gray-500 text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px]">?�황</span>
+                <span className="shrink-0 bg-gray-500 text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px]">상황</span>
                 <p className="text-[17px] text-gray-700 font-medium leading-[1.6]">
                   AS-IS DB 구조 분석 결과, 21개 시설의 예약 정책이<br />각각 별도 테이블에 <strong className="text-[#111] font-bold">하드코딩</strong>되어 있음을 발견
                 </p>
@@ -62,7 +62,7 @@ export default function Slide5() {
 
               {/* Decision */}
               <div className="flex items-start gap-4">
-                <span className="shrink-0 bg-[#3E61DC] text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px] shadow-sm shadow-blue-200">?�단</span>
+                <span className="shrink-0 bg-[#3E61DC] text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px] shadow-sm shadow-blue-200">판단</span>
                 <div>
                   <p className="text-[15px] text-gray-500 font-medium mb-2">"모든 예외를 개별 대응하면 신규 단지 도입 시 개발 공수가 기하급수적으로 증가한다"</p>
                   <p className="text-[18px] text-[#111] font-extrabold leading-snug">
@@ -92,7 +92,7 @@ export default function Slide5() {
 
             {/* Result Box */}
             <div className="mt-auto bg-[#eef2ff]/70 rounded-2xl p-6 border border-indigo-100 shadow-sm relative overflow-hidden">
-              <div className="absolute -right-4 -top-4 text-[60px] opacity-20">?�️</div>
+              <div className="absolute -right-4 -top-4 text-[60px] opacity-20">✅</div>
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-[18px] font-extrabold text-[#3E61DC] tracking-widest uppercase">Result</span>
               </div>
@@ -114,7 +114,7 @@ export default function Slide5() {
             <div className="bg-[#fcfdff] rounded-[1.5rem] p-7 border border-[#f0f4ff] shadow-sm relative mb-8">
               {/* Situation */}
               <div className="flex items-start gap-4 mb-2">
-                <span className="shrink-0 bg-gray-500 text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px]">?�황</span>
+                <span className="shrink-0 bg-gray-500 text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px]">상황</span>
                 <p className="text-[17px] text-gray-700 font-medium leading-[1.6]">
                   사용자 행동 로그 분석 결과,<br /><strong className="text-[#111] font-bold">"이용권 구매 완료 → 30% 사용자가 예약 화면으로 이동하지 않음"</strong> 발견
                 </p>
@@ -132,7 +132,7 @@ export default function Slide5() {
 
               {/* Decision */}
               <div className="flex items-start gap-4">
-                <span className="shrink-0 bg-[#3E61DC] text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px] shadow-sm shadow-blue-200">?�단</span>
+                <span className="shrink-0 bg-[#3E61DC] text-white text-[13px] font-bold px-3 py-1.5 rounded-lg tracking-widest mt-0.5 text-center w-[54px] shadow-sm shadow-blue-200">판단</span>
                 <div>
                   <p className="text-[15px] text-gray-500 font-medium mb-2">"이용권 구매와 예약이 분리된 8단계 Flow가 사용자 이탈의 근본 원인"</p>
                   <p className="text-[18px] text-[#111] font-extrabold leading-snug">
@@ -147,7 +147,7 @@ export default function Slide5() {
               <h4 className="text-[15px] font-bold text-gray-400 mb-5 uppercase tracking-widest pl-1">의사결정 과정</h4>
               <ul className="space-y-4">
                 {[
-                  "사용자 행동 로그 분석 (GA, 2주 데이터)",
+                  "사용자 행동 로그 분석 (2주 데이터)",
                   "VOC 60건 재분류 → \"예약 안 됐다\" 문의가 전체의 40%",
                   "벤치마킹: 야놀자, 네이버 예약 등 타사 예약 Flow 분석",
                   <React.Fragment key="4">TO-BE Flow 설계: <strong className="text-[#111] font-bold">이용권 선택 → 좌석/시간 선택 → 결제 → 예약 완료 (4단계)</strong></React.Fragment>
@@ -162,7 +162,7 @@ export default function Slide5() {
 
             {/* Result Box */}
             <div className="mt-auto bg-[#eef2ff]/70 rounded-2xl p-6 border border-indigo-100 shadow-sm relative overflow-hidden">
-              <div className="absolute -right-4 -top-4 text-[60px] opacity-20">?�️</div>
+              <div className="absolute -right-4 -top-4 text-[60px] opacity-20">✅</div>
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-[18px] font-extrabold text-[#3E61DC] tracking-widest uppercase">Result</span>
               </div>
